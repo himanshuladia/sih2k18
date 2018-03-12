@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GramPanchyatBeta</string>
+
+
+    //Login Activity Strings
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_sign_in_button">Sign In</string>
+    <string name="login_no_account">Don\'t have an account ?</string>
+    <string name="login_sign_up">Sign Up</string>
+    <string name="login_name_hint">Name</string>
 </resources>
