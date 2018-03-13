@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "864151613557",
+    "firebase_url": "https://grampanchyatbeta.firebaseio.com",
+    "project_id": "grampanchyatbeta",
+    "storage_bucket": "grampanchyatbeta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864151613557:android:565d434335aeece9",
+        "android_client_info": {
+          "package_name": "com.example.android.grampanchyatbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864151613557-dmo1ecgu64q7ur6ttq56sohnkmj7l7jq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.grampanchyatbeta",
+            "certificate_hash": "f025470b0329dba9cf17d338b996c7f8de708848"
+          }
+        },
+        {
+          "client_id": "864151613557-0krlg5hl2ptdln1kap8ovlg605el56hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY80r-pPQrx-6x_bazMPUH3nFvXGhcxhY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864151613557-0krlg5hl2ptdln1kap8ovlg605el56hl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
