@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">GramPanchyatBeta</string>
 
+    //VillageActivity
+    <string name="village_activity_toolbar_title">Villages</string>
+
+    //Village Menu
+    <string name="menu_village_adopted">Village Adopted</string>
+    <string name="menu_village_setting">Settings</string>
+    <string name="menu_village_logout">LogOut</string>
 
     //Activity sign layout Strings
     <string name="login_email_hint">Email</string>
@@ -20,4 +27,14 @@
     <string name="sign_up_message_dialog">Registering User .....</string>
     <string name="sign_up_register_successful">Registerd Successful</string>
     <string name="sign_up_registration_failed">Cannot Register</string>
+
+    //UserWork
+    //UserInfo
+    <string name="user_info_village_adoption">No. Of Village Adopted</string>
+    <string name="user_info_display_name">Name</string>
+    <string name="user_info_display_email">Email</string>
+    <string name="user_info_toast_error">Loading Failed</string>
+
+
+
 </resources>
