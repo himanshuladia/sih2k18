@@ -4,13 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.grampanchyatbeta.VillageActivity">
+    tools:context="com.example.android.grampanchyatbeta.MainContent.VillageActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/tool_bar"
+        android:id="@+id/tool_bar_village"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary">
 
     </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/village_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:layout_below="@id/tool_bar_village">
+
+    </ListView>
 </RelativeLayout>
