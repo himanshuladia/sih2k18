@@ -3,10 +3,11 @@
 
     //VillageActivity
     <string name="village_activity_toolbar_title">Villages</string>
+    <string name="village_progress_dialog">Loading</string>
 
     //Village Menu
     <string name="menu_village_adopted">Village Adopted</string>
-    <string name="menu_village_setting">Settings</string>
+    <string name="menu_village_setting">User Info</string>
     <string name="menu_village_logout">LogOut</string>
 
     //Activity sign layout Strings
@@ -35,6 +36,8 @@
     <string name="user_info_display_email">Email</string>
     <string name="user_info_toast_error">Loading Failed</string>
 
+    //VillageAdoptionActivity
+    <string name="village_adoption_toolbar_tiltle">Village Adopted</string>
 
 
 </resources>

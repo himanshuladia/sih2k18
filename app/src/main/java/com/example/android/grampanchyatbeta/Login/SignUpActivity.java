@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.android.grampanchyatbeta.R;
-import com.example.android.grampanchyatbeta.VillageActivity;
+import com.example.android.grampanchyatbeta.MainContent.VillageActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
