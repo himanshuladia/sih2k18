@@ -7,7 +7,7 @@
 
     //Village Menu
     <string name="menu_village_adopted">Village Adopted</string>
-    <string name="menu_village_setting">Settings</string>
+    <string name="menu_village_setting">User Info</string>
     <string name="menu_village_logout">LogOut</string>
 
     //Activity sign layout Strings
