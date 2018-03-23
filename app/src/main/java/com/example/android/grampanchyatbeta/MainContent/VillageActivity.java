@@ -52,6 +52,13 @@ public class VillageActivity extends AppCompatActivity {
             mToolBar=(Toolbar)findViewById(R.id.tool_bar_village);
         setSupportActionBar(mToolBar);
         getSupportActionBar().setTitle(R.string.village_activity_toolbar_title);
+        villageListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                VillageInformation currentVillageInformation=villageAdapter.getItem(position);
+
+            }
+        });
 
 
     }
