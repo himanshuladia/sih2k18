@@ -7,6 +7,7 @@ public class UserInformation {
 
     public String Name;
     public String Email;
+    public String ImageUrl;
     public ArrayList<String> VillageAdopted=new ArrayList<>();
 
 
@@ -15,6 +16,7 @@ public class UserInformation {
         this.Name=Name;
         this.Email=Email;
         VillageAdopted.add("0");
+        ImageUrl="";
     }
 
     public UserInformation(String villageId)

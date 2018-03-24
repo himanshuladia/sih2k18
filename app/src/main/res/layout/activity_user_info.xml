@@ -37,6 +37,7 @@
         app:civ_border_color="#FFFFFFFF"
         app:civ_border_width="3dp" />
 
+
     <RelativeLayout
         android:id="@+id/user_info_profile_layout"
         android:layout_width="match_parent"
@@ -69,6 +70,17 @@
         android:text="@string/user_info_display_email"
         android:textSize="25dp"
         android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/user_info_profile_update_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="38dp"
+            android:layout_toEndOf="@+id/user_info_display_name"
+            android:clickable="true"
+            android:src="@drawable/ic_file_upload_black_24dp" />
 
     </RelativeLayout>
 
