@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.android.grampanchyatbeta.Login.OnBoardingScreenActivity;
 import com.example.android.grampanchyatbeta.Login.SignInActivity;
 import com.example.android.grampanchyatbeta.R;
 import com.example.android.grampanchyatbeta.UserWork.UserInfoActivity;
@@ -42,7 +43,7 @@ public class VillageActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         //Check whether user is already login in or not
         if(mAuth.getCurrentUser()==null) {
-            startActivity(new Intent(this, SignInActivity.class));
+            startActivity(new Intent(this, OnBoardingScreenActivity.class));
             finish();
         }
         progressDialog=(ProgressDialog)new ProgressDialog(this);
