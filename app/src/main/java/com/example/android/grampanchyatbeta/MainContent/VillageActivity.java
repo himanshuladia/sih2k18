@@ -26,6 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class VillageActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -35,6 +36,8 @@ public class VillageActivity extends AppCompatActivity {
     private ProgressDialog progressDialog;
     DatabaseReference villageDataBase;
     private VillageAdapter villageAdapter;
+    private String currentGramPanchayatName;
+    public HashMap<String,String> gramPanchayatFirebaseUID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +49,7 @@ public class VillageActivity extends AppCompatActivity {
             startActivity(new Intent(this, OnBoardingScreenActivity.class));
             finish();
         }
+        gramPanchayatFirebaseUID=new HashMap<>();
         progressDialog=(ProgressDialog)new ProgressDialog(this);
         informationVillage=new ArrayList<>();
         villageListView=(ListView)findViewById(R.id.village_list_view);
@@ -57,6 +61,13 @@ public class VillageActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 VillageInformation currentVillageInformation=villageAdapter.getItem(position);
+                currentGramPanchayatName=currentVillageInformation.getNameVillage();
+                Intent intent=new Intent(VillageActivity.this,GramPanchayatDetailsActivity.class);
+                String GramPanchayatUID=gramPanchayatFirebaseUID.get(currentGramPanchayatName);
+                intent.putExtra("currentGrampanchayatUID",GramPanchayatUID);
+                intent.putExtra("currentGrampanchayat",currentGramPanchayatName);
+                startActivity(intent);
+
 
             }
         });
@@ -73,14 +84,15 @@ public class VillageActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 informationVillage.clear();
-                for(DataSnapshot villageSnapshot: dataSnapshot.getChildren())
+                for(DataSnapshot gramPanchayatSnapshot: dataSnapshot.getChildren())
                 {
-
-                    String nameVillage=villageSnapshot.child("nameVillage").getValue().toString();
-                    String location=villageSnapshot.child("location").getValue().toString();
-                    String villageRanking=villageSnapshot.child("villageRanking").getValue().toString();
-                    String villageRating=villageSnapshot.child("villageRating").getValue().toString();
-                    VillageInformation mTemporaryVillage=new VillageInformation(location,nameVillage,villageRanking,villageRating);
+                    String GramPanchayatUID=gramPanchayatSnapshot.getKey().toString();
+                    String nameGramPanchayat=gramPanchayatSnapshot.child("nameVillage").getValue().toString();
+                    gramPanchayatFirebaseUID.put(nameGramPanchayat,GramPanchayatUID);
+                    String location=gramPanchayatSnapshot.child("location").getValue().toString();
+                    String grampPanchayatRanking=gramPanchayatSnapshot.child("villageRanking").getValue().toString();
+                    String gramPanchayatRating=gramPanchayatSnapshot.child("villageRating").getValue().toString();
+                    VillageInformation mTemporaryVillage=new VillageInformation(location,nameGramPanchayat,grampPanchayatRanking,gramPanchayatRating);
                     informationVillage.add(mTemporaryVillage);
 
                 }

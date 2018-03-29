@@ -6,6 +6,7 @@
     <color name="colorBackground">#D81B60</color>
     <color name="colorButton">#CE93D8</color>
     <color name="colorWhiteText">#fff</color>
+    <color name="lightgray">#ededed</color>
 
 
     //Rating Color
@@ -42,5 +43,6 @@
         <item>@color/dot_dark_screen2</item>
         <item>@color/dot_dark_screen3</item>
     </array>
+
 
 </resources>
