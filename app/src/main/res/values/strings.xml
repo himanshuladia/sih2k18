@@ -56,4 +56,17 @@
     <string name="village_detail_name">GramPanchayat Name</string>
 
 
+    //Index For Sorting
+    <string name="over_all_index">Over All</string>
+    <string name="education_index">Education</string>
+    <string name="health_index">Health</string>
+    <string name="sanitation_index">Sanitation</string>
+    <string name="literacy_index">Literacy</string>
+    <string name="water_index">Water</string>
+    <string name="waste_land_index">Waste Land Reclamation</string>
+    <string name="agriculture_land_index">Agriculture</string>
+    <string name="drainage_index">Drainage</string>
+    <string name="built_up_index">InfraStructure</string>
+
+
 </resources>

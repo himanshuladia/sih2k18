@@ -12,8 +12,44 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary">
-
     </android.support.v7.widget.Toolbar>
+        <EditText
+            android:id="@+id/gram_panchayat_search_field"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tool_bar_village"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/search_layout"
+            android:ems="10"
+            android:hint="Search here"
+            android:inputType="textPersonName"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/gram_panchayat_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gram_panchayat_search_field"
+        android:layout_alignTop="@+id/gram_panchayat_search_field"
+       android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:tint="@color/colorGramUser"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+    <Spinner
+        android:id="@+id/gram_panchayat_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_below="@+id/gram_panchayat_search_field"
+        android:spinnerMode="dropdown"/>
 
     <ListView
         android:id="@+id/village_list_view"
@@ -22,7 +58,7 @@
         android:orientation="vertical"
         android:divider="@android:color/transparent"
         android:dividerHeight="0dp"
-        android:layout_below="@id/tool_bar_village">
+        android:layout_below="@id/gram_panchayat_spinner">
 
     </ListView>
 </RelativeLayout>

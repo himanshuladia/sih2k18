@@ -44,5 +44,8 @@
         <item>@color/dot_dark_screen3</item>
     </array>
 
+    //Gram Panchayat Details
+    <color name="colorGramUser">#6361F4</color>
+
 
 </resources>

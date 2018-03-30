@@ -42,14 +42,12 @@ public class VillageAdapter extends ArrayAdapter<VillageInformation> {
 
         //
        TextView villageRating=(TextView)listItemView.findViewById(R.id.village_adopted_rating);
-       TextView villageRanking=(TextView)listItemView.findViewById(R.id.village_adopted_ranking);
        TextView location=(TextView)listItemView.findViewById(R.id.village_adopted_village_location);
        TextView villageName=(TextView)listItemView.findViewById(R.id.village_adopted_village_name);
 
         VillageInformation currentVillageInformation=adoptedVillage.get(position);
         villageRating.setText(currentVillageInformation.getVillageRating());
         villageName.setText(currentVillageInformation.getNameVillage());
-        villageRanking.setText(currentVillageInformation.getVillageRanking());
         location.setText(currentVillageInformation.getLocation());
         GradientDrawable magnitudeCircle = (GradientDrawable) villageRating.getBackground();
         int magnitudeColor=getMagnitudeColor(currentVillageInformation.getVillageRating());

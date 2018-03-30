@@ -55,14 +55,14 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <TextView
-                    android:id="@+id/village_adopted_rating1"
+                    android:id="@+id/gram_panchayat_education_index"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:background="@drawable/magnitude_circle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="16sp"
                     tools:text="8.9" />
                 <TextView
@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Banking"/>
+                    android:text="@string/education_index"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -80,7 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your bank activities"
+                    android:text="Check your Education activities"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 
@@ -98,14 +98,14 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <TextView
-                    android:id="@+id/village_adopted_rating2"
+                    android:id="@+id/gram_panchayat_sanitation_index"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:background="@drawable/magnitude_circle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="16sp"
                     tools:text="8.9" />
                 <TextView
@@ -113,7 +113,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Ideas"/>
+                    android:text="@string/sanitation_index"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -123,7 +123,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your bank activities"
+                    android:text="Check your Sanitation activities"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 
@@ -151,14 +151,14 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <TextView
-                    android:id="@+id/village_adopted_rating3"
+                    android:id="@+id/gram_panchayat_health_index"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:background="@drawable/magnitude_circle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="16sp"
                     tools:text="8.9" />
                 <TextView
@@ -166,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Add"/>
+                    android:text="@string/health_index"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -176,7 +176,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your bank activities"
+                    android:text="Check your Health activities"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 
@@ -196,14 +196,14 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/village_adopted_rating4"
+                    android:id="@+id/gram_panchayat_literacy_index"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:background="@drawable/magnitude_circle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="16sp"
                     tools:text="8.9" />
 
@@ -211,7 +211,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Links"
+                    android:text="@string/literacy_index"
                     android:textStyle="bold" />
 
                 <View
@@ -225,7 +225,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Check your bank activities"
+                    android:text="Check your Literacy activities"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
@@ -252,14 +252,14 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <TextView
-                    android:id="@+id/village_adopted_rating5"
+                    android:id="@+id/gram_panchayat_water_index"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:background="@drawable/magnitude_circle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="16sp"
                     tools:text="8.9" />
                 <TextView
@@ -267,7 +267,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Add"/>
+                    android:text="@string/water_index"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -277,7 +277,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your bank activities"
+                    android:text="Check your water activities"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 
@@ -297,14 +297,14 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/village_adopted_rating6"
+                    android:id="@+id/gram_panchayat_waste_index"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:background="@drawable/magnitude_circle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="16sp"
                     tools:text="8.9" />
 
@@ -312,7 +312,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Links"
+                    android:text="@string/waste_land_index"
                     android:textStyle="bold" />
 
                 <View
@@ -326,7 +326,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Check your bank activities"
+                    android:text="Check your waste activities"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
@@ -354,14 +354,14 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <TextView
-                    android:id="@+id/village_adopted_rating7"
+                    android:id="@+id/gram_panchayat_agriculture_index"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:background="@drawable/magnitude_circle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="16sp"
                     tools:text="8.9" />
                 <TextView
@@ -369,7 +369,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Banking"/>
+                    android:text="@string/agriculture_land_index"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -379,7 +379,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your bank activities"
+                    android:text="Check your Agriculture activities"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 
@@ -397,14 +397,14 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <TextView
-                    android:id="@+id/village_adopted_rating8"
+                    android:id="@+id/gram_panchayat_drainage_index"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:background="@drawable/magnitude_circle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="16sp"
                     tools:text="8.9" />
                 <TextView
@@ -412,7 +412,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Ideas"/>
+                    android:text="@string/drainage_index"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -422,7 +422,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your bank activities"
+                    android:text="Check your Drainage activities"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 
@@ -451,14 +451,14 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <TextView
-                    android:id="@+id/village_adopted_rating9"
+                    android:id="@+id/gram_panchayat_infraStructure_index"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:background="@drawable/magnitude_circle"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="16sp"
                     tools:text="8.9" />
                 <TextView
@@ -466,7 +466,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Banking"/>
+                    android:text="@string/built_up_index"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -476,50 +476,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Check your bank activities"
-                    android:padding="5dp"
-                    android:textColor="@android:color/darker_gray"/>
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:layout_width="160dp"
-            android:layout_height="190dp"
-            android:layout_margin="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-                <TextView
-                    android:id="@+id/village_adopted_rating10"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/magnitude_circle"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp"
-                    tools:text="8.9" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:text="Ideas"/>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/lightgray"
-                    android:layout_margin="10dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Check your bank activities"
+                    android:text="Check your InfraStructure activities"
                     android:padding="5dp"
                     android:textColor="@android:color/darker_gray"/>
 

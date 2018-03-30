@@ -2,6 +2,7 @@ package com.example.android.grampanchyatbeta.MainContent;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -9,7 +10,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Spinner;
 
 import com.example.android.grampanchyatbeta.Login.OnBoardingScreenActivity;
 import com.example.android.grampanchyatbeta.Login.SignInActivity;
@@ -26,6 +29,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 
 public class VillageActivity extends AppCompatActivity {
@@ -37,6 +42,8 @@ public class VillageActivity extends AppCompatActivity {
     DatabaseReference villageDataBase;
     private VillageAdapter villageAdapter;
     private String currentGramPanchayatName;
+    private Spinner sortingSpinner;
+    private  String itemSelected;
     public HashMap<String,String> gramPanchayatFirebaseUID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +56,36 @@ public class VillageActivity extends AppCompatActivity {
             startActivity(new Intent(this, OnBoardingScreenActivity.class));
             finish();
         }
+        //Sorting Activity
+        sortingSpinner=(Spinner)findViewById(R.id.gram_panchayat_spinner);
+        String[] items = new String[]{getResources().getString(R.string.over_all_index),getResources().getString(R.string.education_index),getResources().getString(R.string.sanitation_index),getResources().getString(R.string.health_index),
+               getResources().getString(R.string.literacy_index),getResources().getString(R.string.water_index),getResources().getString(R.string.waste_land_index),
+                getResources().getString(R.string.agriculture_land_index),getResources().getString(R.string.drainage_index),
+                getResources().getString(R.string.built_up_index)};
+        ArrayAdapter<String> dropDownAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
+        sortingSpinner.setAdapter(dropDownAdapter);
+        //
+       /** sortingSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                String itemSelected=adapterView.getItemAtPosition(position).toString();
+            }
+        });**/
+        sortingSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                itemSelected=parent.getItemAtPosition(position).toString();
+                if(itemSelected.contains(" ")){
+                    itemSelected= itemSelected.substring(0, itemSelected.indexOf(" "));
+                }
+                Sorting(itemSelected);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
         gramPanchayatFirebaseUID=new HashMap<>();
         progressDialog=(ProgressDialog)new ProgressDialog(this);
         informationVillage=new ArrayList<>();
@@ -88,15 +125,23 @@ public class VillageActivity extends AppCompatActivity {
                     String nameGramPanchayat=gramPanchayatSnapshot.child("nameVillage").getValue().toString();
                     gramPanchayatFirebaseUID.put(nameGramPanchayat,GramPanchayatUID);
                     String location=gramPanchayatSnapshot.child("location").getValue().toString();
-                    String grampPanchayatRanking=gramPanchayatSnapshot.child("villageRanking").getValue().toString();
+                    String gramPanchayatEducationIndex=gramPanchayatSnapshot.child("educationIndex").getValue().toString();
+                    String gramPanchayatSanitationIndex=gramPanchayatSnapshot.child("sanitationIndex").getValue().toString();
+                    String gramPanchayatHealthIndex=gramPanchayatSnapshot.child("healthIndex").getValue().toString();
+                    String gramPanchayatLiteracyIndex=gramPanchayatSnapshot.child("literacyIndex").getValue().toString();
+                    String gramPanchayatWaterIndex=gramPanchayatSnapshot.child("waterIndex").getValue().toString();
+                    String gramPanchayatWasteIndex=gramPanchayatSnapshot.child("wasteIndex").getValue().toString();
+                    String gramPanchayatAgricultureIndex=gramPanchayatSnapshot.child("agricultureIndex").getValue().toString();
+                    String gramPanchayatDrainageIndex=gramPanchayatSnapshot.child("drainageIndex").getValue().toString();
                     String gramPanchayatRating=gramPanchayatSnapshot.child("villageRating").getValue().toString();
-                    VillageInformation mTemporaryVillage=new VillageInformation(location,nameGramPanchayat,grampPanchayatRanking,gramPanchayatRating);
+                    String gramPanchayatInfraStructureIndex=gramPanchayatSnapshot.child("infraStructureIndex").getValue().toString();
+                    VillageInformation mTemporaryVillage=new VillageInformation(location,nameGramPanchayat,gramPanchayatRating,gramPanchayatEducationIndex,gramPanchayatSanitationIndex,
+                            gramPanchayatHealthIndex,gramPanchayatLiteracyIndex,gramPanchayatWaterIndex,gramPanchayatWasteIndex,gramPanchayatAgricultureIndex,gramPanchayatDrainageIndex,gramPanchayatInfraStructureIndex);
                     informationVillage.add(mTemporaryVillage);
 
                 }
                 progressDialog.dismiss();
-                 villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
-                villageListView.setAdapter(villageAdapter);
+                 Sorting(itemSelected);
             }
 
             @Override
@@ -137,4 +182,119 @@ public class VillageActivity extends AppCompatActivity {
         return true;
 
     }
+        public void Sorting(String typeOfSort)
+        {
+            if(typeOfSort.equals("Education"))
+            {
+
+                Collections.sort(informationVillage, new Comparator<VillageInformation>() {
+                    public int compare(VillageInformation gramPanchayat1, VillageInformation gramPanchayat2) {
+                        return gramPanchayat1.getEducationIndex().compareTo(gramPanchayat2.getEducationIndex());
+                    }
+                });
+                villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
+                villageListView.setAdapter(villageAdapter);
+            }
+            if(typeOfSort.equals("Sanitation"))
+            {
+
+                Collections.sort(informationVillage, new Comparator<VillageInformation>() {
+                    public int compare(VillageInformation gramPanchayat1, VillageInformation gramPanchayat2) {
+                        return gramPanchayat1.getSanitationIndex().compareTo(gramPanchayat2.getSanitationIndex());
+                    }
+                });
+                villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
+                villageListView.setAdapter(villageAdapter);
+            }
+            if(typeOfSort.equals("Health"))
+            {
+
+                Collections.sort(informationVillage, new Comparator<VillageInformation>() {
+                    public int compare(VillageInformation gramPanchayat1, VillageInformation gramPanchayat2) {
+                        return gramPanchayat1.getHealthIndex().compareTo(gramPanchayat2.getHealthIndex());
+                    }
+                });
+                villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
+                villageListView.setAdapter(villageAdapter);
+            }
+            if(typeOfSort.equals("Literacy"))
+            {
+
+                Collections.sort(informationVillage, new Comparator<VillageInformation>() {
+                    public int compare(VillageInformation gramPanchayat1, VillageInformation gramPanchayat2) {
+                        return gramPanchayat1.getLiteracyIndex().compareTo(gramPanchayat2.getLiteracyIndex());
+                    }
+                });
+                villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
+                villageListView.setAdapter(villageAdapter);
+            }
+            if(typeOfSort.equals("Water")){
+
+                Collections.sort(informationVillage, new Comparator<VillageInformation>() {
+                    public int compare(VillageInformation gramPanchayat1, VillageInformation gramPanchayat2) {
+                        return gramPanchayat1.getWaterIndex().compareTo(gramPanchayat2.getWaterIndex());
+                    }
+                });
+                villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
+                villageListView.setAdapter(villageAdapter);
+
+            }
+            if(typeOfSort.equals("Waste")){
+
+                Collections.sort(informationVillage, new Comparator<VillageInformation>() {
+                    public int compare(VillageInformation gramPanchayat1, VillageInformation gramPanchayat2) {
+                        return gramPanchayat1.getWasteIndex().compareTo(gramPanchayat2.getWasteIndex());
+                    }
+                });
+                villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
+                villageListView.setAdapter(villageAdapter);
+            }
+            if(typeOfSort.equals("Agriculture"))
+            {
+
+                Collections.sort(informationVillage, new Comparator<VillageInformation>() {
+                    public int compare(VillageInformation gramPanchayat1, VillageInformation gramPanchayat2) {
+                        return gramPanchayat1.getAgricultureIndex().compareTo(gramPanchayat2.getAgricultureIndex());
+                    }
+                });
+                villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
+                villageListView.setAdapter(villageAdapter);
+            }
+            if(typeOfSort.equals("Drainage"))
+            {
+
+                Collections.sort(informationVillage, new Comparator<VillageInformation>() {
+                    public int compare(VillageInformation gramPanchayat1, VillageInformation gramPanchayat2) {
+                        return gramPanchayat1.getDrainageIndex().compareTo(gramPanchayat2.getDrainageIndex());
+                    }
+                });
+               villageAdapter.clear();
+                villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
+                villageListView.setAdapter(villageAdapter);
+            }
+            if(typeOfSort.equals("InfraStructure"))
+            {
+
+                Collections.sort(informationVillage, new Comparator<VillageInformation>() {
+                    public int compare(VillageInformation gramPanchayat1, VillageInformation gramPanchayat2) {
+                        return gramPanchayat1.getInfraStructureIndex().compareTo(gramPanchayat2.getInfraStructureIndex());
+                    }
+                });
+                villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
+                villageListView.setAdapter(villageAdapter);
+            }
+            if(typeOfSort.equals("Over")){
+
+                Collections.sort(informationVillage, new Comparator<VillageInformation>() {
+                    public int compare(VillageInformation gramPanchayat1, VillageInformation gramPanchayat2) {
+                        return gramPanchayat1.getVillageRating().compareTo(gramPanchayat2.getVillageRating());
+                    }
+                });
+
+                villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
+                villageListView.setAdapter(villageAdapter);
+            }
+        }
+
+
 }

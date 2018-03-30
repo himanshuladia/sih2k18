@@ -89,10 +89,9 @@ public class VillageAdoptionActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String nameVillage=dataSnapshot.child("nameVillage").getValue().toString();
                 String location=dataSnapshot.child("location").getValue().toString();
-                String villageRanking=dataSnapshot.child("villageRanking").getValue().toString();
                 String villageRating=dataSnapshot.child("villageRating").getValue().toString();
-                VillageInformation mTemporaryVillage=new VillageInformation(location,nameVillage,villageRanking,villageRating);
-                informationVillageAdopted.add(mTemporaryVillage);
+                //VillageInformation mTemporaryVillage=new VillageInformation(location,nameVillage,villageRating);
+               // informationVillageAdopted.add(mTemporaryVillage);
             }
 
 
