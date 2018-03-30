@@ -54,4 +54,6 @@
         android:textColor="@android:color/white"
         android:textSize="16sp"
         tools:text="8.9" />
+
+
 </LinearLayout>

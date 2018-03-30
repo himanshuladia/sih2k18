@@ -11,7 +11,7 @@
         android:id="@+id/tool_bar_village"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary">
+        android:background="@color/dot_light_screen3">
     </android.support.v7.widget.Toolbar>
         <EditText
             android:id="@+id/gram_panchayat_search_field"

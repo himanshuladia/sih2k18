@@ -18,7 +18,7 @@ import com.example.android.grampanchyatbeta.Login.OnBoardingScreenActivity;
 import com.example.android.grampanchyatbeta.Login.SignInActivity;
 import com.example.android.grampanchyatbeta.R;
 import com.example.android.grampanchyatbeta.UserWork.UserInfoActivity;
-import com.example.android.grampanchyatbeta.UserWork.VillageAdoptionActivity;
+
 import com.example.android.grampanchyatbeta.UserWork.VillageAdapter;
 import com.example.android.grampanchyatbeta.VillageInformation;
 import com.google.firebase.auth.FirebaseAuth;
@@ -165,8 +165,7 @@ public class VillageActivity extends AppCompatActivity {
          super.onOptionsItemSelected(item);
         if(item.getItemId()==R.id.village_adopted_menu)
         {
-            startActivity(new Intent(VillageActivity.this,VillageAdoptionActivity.class));
-            return true;
+
         }
         if(item.getItemId()==R.id.log_out_menu)
         {
@@ -268,7 +267,6 @@ public class VillageActivity extends AppCompatActivity {
                         return gramPanchayat1.getDrainageIndex().compareTo(gramPanchayat2.getDrainageIndex());
                     }
                 });
-               villageAdapter.clear();
                 villageAdapter =new VillageAdapter(VillageActivity.this,informationVillage);
                 villageListView.setAdapter(villageAdapter);
             }

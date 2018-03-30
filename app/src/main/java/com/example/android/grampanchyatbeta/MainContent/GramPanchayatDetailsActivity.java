@@ -39,6 +39,7 @@ public class GramPanchayatDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gram_panchayat_details);
 
+
         Intent intent = getIntent();
         mCurrentGramPanchayat = intent.getStringExtra("currentGrampanchayat");
         mCurrentGramPanchayatUID = intent.getStringExtra("currentGrampanchayatUID");
@@ -157,5 +158,6 @@ public class GramPanchayatDetailsActivity extends AppCompatActivity {
         }
         return ContextCompat.getColor(getApplicationContext(), magnitudeColorResourceId);
     }
+
 
 }

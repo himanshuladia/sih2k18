@@ -23,7 +23,6 @@
         <activity android:name=".Login.SignInActivity" />
         <activity android:name=".Login.SignUpActivity"></activity>
         <activity android:name=".UserWork.UserInfoActivity"></activity>
-        <activity android:name=".UserWork.VillageAdoptionActivity"></activity>
         <activity android:name=".Login.OnBoardingScreenActivity"></activity>
         <activity android:name=".MainContent.GramPanchayatDetailsActivity"></activity>
 
