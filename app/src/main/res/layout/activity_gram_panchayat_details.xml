@@ -12,9 +12,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.grampanchyatbeta.MainContent.GramPanchayatDetailsActivity"
     android:orientation="vertical"
-    android:padding="10dp"
     android:background="#fcfcfc"
-    android:id="@+id/ll">
+    android:id="@+id/gram_panchayat_main_layout">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/tool_bar_gram_panchayat"

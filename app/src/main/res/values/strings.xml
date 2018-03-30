@@ -6,7 +6,7 @@
     <string name="village_progress_dialog">Loading</string>
 
     //Village Menu
-    <string name="menu_village_adopted">Village Adopted</string>
+    <string name="menu_village_adopted">GramPanchayat Adopted</string>
     <string name="menu_village_setting">User Info</string>
     <string name="menu_village_logout">LogOut</string>
 
@@ -31,7 +31,7 @@
 
     //UserWork
     //UserInfo
-    <string name="user_info_village_adoption">No. Of Village Adopted</string>
+    <string name="user_info_village_adoption">No. Of GramPanchayat Adopted</string>
     <string name="user_info_display_name">Name</string>
     <string name="user_info_display_email">Email</string>
     <string name="user_info_toast_error">Loading Failed</string>
@@ -53,7 +53,7 @@
     <string name="on_boarding_start">GOT IT</string>
 
     //Village Details Activity
-    <string name="village_detail_name">Village Name</string>
+    <string name="village_detail_name">GramPanchayat Name</string>
 
 
 </resources>

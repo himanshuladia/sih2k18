@@ -67,8 +67,6 @@ public class VillageActivity extends AppCompatActivity {
                 intent.putExtra("currentGrampanchayatUID",GramPanchayatUID);
                 intent.putExtra("currentGrampanchayat",currentGramPanchayatName);
                 startActivity(intent);
-
-
             }
         });
 
