@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">GramPanchyatBeta</string>
+    <string name="app_name">GP</string>
 
     //VillageActivity
-    <string name="village_activity_toolbar_title">Villages</string>
+    <string name="village_activity_toolbar_title">GramPanchayat</string>
     <string name="village_progress_dialog">Loading</string>
 
     //Village Menu
@@ -38,6 +38,22 @@
 
     //VillageAdoptionActivity
     <string name="village_adoption_toolbar_tiltle">Village Adopted</string>
+
+    //Intro Screen
+    <string name="intro_screen_title_1"></string>
+    <string name="intro_screen_title_2"></string>
+    <string name="intro_screen_title_3"></string>
+    <string name="intro_screen_dec_1"></string>
+    <string name="intro_screen_dec_2"></string>
+    <string name="intro_screen_dec_3"></string>
+
+    //OnBoardingActivity
+    <string name="on_boarding_next">NEXT</string>
+    <string name="on_boarding_skip">SKIP</string>
+    <string name="on_boarding_start">GOT IT</string>
+
+    //Village Details Activity
+    <string name="village_detail_name">Village Name</string>
 
 
 </resources>
