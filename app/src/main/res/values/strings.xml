@@ -40,12 +40,12 @@
     <string name="village_adoption_toolbar_tiltle">Village Adopted</string>
 
     //Intro Screen
-    <string name="intro_screen_title_1"></string>
-    <string name="intro_screen_title_2"></string>
-    <string name="intro_screen_title_3"></string>
-    <string name="intro_screen_dec_1"></string>
-    <string name="intro_screen_dec_2"></string>
-    <string name="intro_screen_dec_3"></string>
+    <string name="intro_screen_title_1"> Need To Adopt Gram Panchayat </string>
+    <string name="intro_screen_title_2"> Awareness </string>
+    <string name="intro_screen_title_3"> Suggestive Measures </string>
+    <string name="intro_screen_dec_1">Development of backward areas is essential for the upliftment of the country as still 70% of population is rural in India</string>
+    <string name="intro_screen_dec_2">Development index prioritizes the evolution of backward panchayats</string>
+    <string name="intro_screen_dec_3">Amendments are to be made for amenities on which development of panchayat depends</string>
 
     //OnBoardingActivity
     <string name="on_boarding_next">NEXT</string>
