@@ -1,0 +1,89 @@
+lc_code,dscr1,dscr2,dscr3,Shape_Leng,Shape_Area,PI_Code,stcode
+WBCN,Water bodies,Canal,Canal,2.5845989743462705,0.06553324285776198,,28
+BURH,Built up,Built up (Rural),Hamlets and dispersed household,3.180078051880116,0.049773728054189885,Ponnavanipeta,28
+BURH,Built up,Built up (Rural),Hamlets and dispersed household,10.400605044686905,0.07648324524812342,Pakaivalasa,28
+BURV,Built up,Built up (Rural),Village,3.7840629784294824,0.018225801711348754,Manchalapeta,28
+BURH,Built up,Built up (Rural),Hamlets and dispersed household,11.975145966608943,0.05978557526208469,Pakaivalasa,28
+BURH,Built up,Built up (Rural),Hamlets and dispersed household,0.7168176278243861,0.08567704303516956,Manchalapeta,28
+BURH,Built up,Built up (Rural),Hamlets and dispersed household,8.440146707388404,0.037315808685619886,Manchalapeta,28
+BURH,Built up,Built up (Rural),Hamlets and dispersed household,8.778126158019415,0.11887819315235683,Manchalapeta,28
+BURV,Built up,Built up (Rural),Village,3.5867297437200505,0.06625527713375808,Mandapeta,28
+BURV,Built up,Built up (Rural),Village,4.591401060512531,0.04529267533329138,Ponnavanipeta,28
+BURV,Built up,Built up (Rural),Village,8.907209106567914,0.06687195897363526,Pakaivalasa,28
+BUTP,Built up,Transportation,Transportation,0.3632788232178977,0.015150801521550182,,28
+BUMN,Built up,Mining / industrial,Mining / industrial,7.129954448827956,0.10166992428733146,,28
+BURV,Built up,Built up (Rural),Village,11.164667659665614,0.06017113416646584,Balarampuram,28
+BURV,Built up,Built up (Rural),Village,0.8401382065307855,0.10088933966739086,Ramayyapeta,28
+BURV,Built up,Built up (Rural),Village,5.670247325609102,0.029147857530985616,Bavajipeta,28
+BURV,Built up,Built up (Rural),Village,5.088467969485562,0.00032758481404223793,Yerakayyapeta,28
+BURV,Built up,Built up (Rural),Village,0.5089807060675373,0.09882857782121318,Kurudu,28
+BURV,Built up,Built up (Rural),Village,8.062027972959497,0.10731703286486548,Kurudu,28
+BURV,Built up,Built up (Rural),Village,6.185776770504576,0.0844545018346768,Choudary Kotturu,28
+BURV,Built up,Built up (Rural),Village,7.660823657924688,0.10597590377544401,Choudary Kotturu,28
+WBLP,Water bodies,Lakes / Ponds,Lakes / Ponds,11.817212679329328,0.004072994053276887,,28
+WBLP,Water bodies,Lakes / Ponds,Lakes / Ponds,1.4094995300470503,0.022341998574910486,,28
+WBLP,Water bodies,Lakes / Ponds,Lakes / Ponds,4.805212961722629,0.11205412649263835,,28
+WBRS,Water bodies,River / Stream / Drain,River / Stream / Drain,9.366056254590706,0.12358853935166984,,28
+BUMN,Built up,Mining / industrial,Mining / industrial,9.725278871426058,0.0054073228888878,,28
+BUMN,Built up,Mining / industrial,Mining / industrial,12.272146855356493,0.005341310977910568,,28
+AGPL,Agricultural land,Agriculture plantation,Agriculture plantation,3.829227356333035,0.07096100163224824,,28
+AGPL,Agricultural land,Agriculture plantation,Agriculture plantation,1.3559328161559614,0.03867752346310535,,28
+AGPL,Agricultural land,Agriculture plantation,Agriculture plantation,0.7741064441061088,0.10496409635230962,,28
+AGPL,Agricultural land,Agriculture plantation,Agriculture plantation,2.1916442773686615,0.04355519096159175,,28
+AGPL,Agricultural land,Agriculture plantation,Agriculture plantation,4.63242544273124,0.0688750727761703,,28
+AGPL,Agricultural land,Agriculture plantation,Agriculture plantation,8.390686586957683,0.03160929457987849,,28
+AGPL,Agricultural land,Agriculture plantation,Agriculture plantation,7.64322146124259,0.06517249028147469,,28
+AGCR,Agricultural land,Crop land,Crop land,7.08136817618323,0.007432318122650834,,28
+AGCR,Agricultural land,Crop land,Crop land,10.608009994687912,0.11982143403470606,,28
+AGCR,Agricultural land,Crop land,Crop land,2.117080736026995,0.10578121459376666,,28
+AGCR,Agricultural land,Crop land,Crop land,11.351531284645198,0.11825785207496617,,28
+WLBR,Wastelands,Barren rocky,Barren rocky,1.1242335012065434,0.10457228074729392,,28
+WLBR,Wastelands,Barren rocky,Barren rocky,3.7680768651686383,0.07919213325014685,,28
+WLBR,Wastelands,Barren rocky,Barren rocky,12.043880192373406,0.0021058309464337937,,28
+WLBR,Wastelands,Barren rocky,Barren rocky,0.8857363998738527,0.12207115702859733,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,3.4774568837915587,0.004466380711317417,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,4.367353010259537,0.07522092567218756,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,7.454550379754116,0.09243553123811636,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,0.46427826766713765,0.02303333441522492,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,1.538789099930833,0.12073321940425613,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,8.91220729273128,0.10677372436042763,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,0.6275613491922283,0.0351931996263065,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,5.41943826968187,0.1075536946620776,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,1.8280203122007135,0.08302776565837808,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,5.373690436829369,0.027520323785445062,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,4.869548494760133,0.11724181146311657,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,1.2935305042857084,0.09457828073366593,,28
+WLSP,Wastelands,Scrub land,Scrub land Open,2.6514651865239,0.01601256533397345,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,7.104695302437802,0.08267549801255186,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,8.877316300760164,0.02600231406005813,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,10.593097016879849,0.0004502146258123221,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,2.6730528691394726,0.027727332283073995,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,10.81532264733645,0.09853302373536722,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,1.3099459331225665,0.03329158762150583,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.22318201596671408,0.0015063689532822144,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.1749802652927219,0.0016368812367400052,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,1.4953876458761053,0.029986650938482975,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.552610521787434,0.009283044363618442,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.3468018146928348,0.005323316096496738,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.4431377508585452,0.012061419874605768,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.05909252279707275,9.15314650482515e-05,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.5578416344986549,0.011007068533540556,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.6749823828505747,0.01156746952428531,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.23168717552523785,0.0037887591555353095,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.3118257338139295,0.00681111812380056,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.5886216495472875,0.010381365404843405,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.40209335058589707,0.006555852547310071,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.40940058742284297,0.008176369704610874,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.7954257681715606,0.025170247798281708,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,1.5062767769290089,0.1008021277594657,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.7563618109919164,0.020331915852388808,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.5875971886549773,0.017276237762527354,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.33591651214138624,0.006534308758717582,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,1.4561257177159497,0.1005014554393377,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.2908691877525812,0.004102442061959429,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.4333962570314807,0.012587392782594452,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,1.41297850427473,0.08253275226526084,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.3920116273256398,0.005228453940103143,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.9649437273341348,0.048357504491366936,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.22318858341738335,0.002721775459734593,,28
+WBRT,Water bodies,Reservoir / Tanks,Reservoir / Tanks,0.5946692321944913,0.011155073361537073,,28
