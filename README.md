@@ -8,12 +8,12 @@ The project was made as a result of the Smart India Hackathon 2018 Grand Finale 
 
 # UI
 
-![Boarding](https://github.com/himanshuladia/sih2k18/blob/master/G1.jpg)
-![Bparding](https://github.com/himanshuladia/sih2k18/blob/master/G3.jpg)
-![Login](https://github.com/himanshuladia/sih2k18/blob/master/G4.jpg)
-![Login](https://github.com/himanshuladia/sih2k18/blob/master/G5.jpg)
-![Main](https://github.com/himanshuladia/sih2k18/blob/master/G6.jpg)
-![Main](https://github.com/himanshuladia/sih2k18/blob/master/G7.jpg)
-![Main](https://github.com/himanshuladia/sih2k18/blob/master/G8.jpg)
-![Main](https://github.com/himanshuladia/sih2k18/blob/master/G9.jpg)
-![Main](https://github.com/himanshuladia/sih2k18/blob/master/G10.jpg)
+![Alt Text](https://github.com/himanshuladia/sih2k18/blob/master/G1.jpg)
+![Alt Text](https://github.com/himanshuladia/sih2k18/blob/master/G3.jpg)
+![Alt Text](https://github.com/himanshuladia/sih2k18/blob/master/G4.jpg)
+![Alt Text](https://github.com/himanshuladia/sih2k18/blob/master/G5.jpg)
+![Alt Text](https://github.com/himanshuladia/sih2k18/blob/master/G6.jpg)
+![Alt Text](https://github.com/himanshuladia/sih2k18/blob/master/G7.jpg)
+![Alt Text](https://github.com/himanshuladia/sih2k18/blob/master/G8.jpg)
+![Alt Text](https://github.com/himanshuladia/sih2k18/blob/master/G9.jpg)
+![Alt Text](https://github.com/himanshuladia/sih2k18/blob/master/G10.jpg)
